@@ -1,0 +1,15 @@
+﻿body {
+}
+
+.termsH {
+    text-align:left;
+}
+
+.termsP {
+    text-align: left;
+}
+
+#termsPage {
+    width: 75%;
+    transform: translate(18%, 0%);
+}

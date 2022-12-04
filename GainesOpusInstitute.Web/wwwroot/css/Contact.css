@@ -1,0 +1,75 @@
+/* General Page CSS */
+:root{
+
+}
+.hr{
+    color: var(--color-green);
+    border: 5px solid var(--color-green)
+}
+#contactContent {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    outline: 3px solid var(--test-outline);
+}
+#contact-container {
+    min-height: 800px;
+    text-align: center;
+    background-color: var(--color-tan);
+    outline: 3px solid var(--test-outline);
+}
+#contact-section1 {
+    display: inline-block;
+    top: +100px;
+    height: 300px;
+    width: 75%;
+    position: relative;
+    text-align: center;
+    background-color: var(--color-tan);
+    outline: 3px solid var(--test-outline);
+}
+#section1-title1 {
+    width: 75%;
+    margin: 50px auto;
+    color: var(--color-green);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 45px;
+    outline: 3px solid var(--test-outline);
+
+    position: relative;
+}
+#section1-title2 {
+    width: 50%;
+    margin: 30px auto;
+    color: var(--color-green);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    outline: 3px solid var(--test-outline);
+    position: relative;
+}
+#contact-discord-button-container {
+    position: relative;
+    top: 75px;
+    outline: 3px solid var(--test-outline);
+}
+#contact-discord-button {
+
+    padding: 10px 43px;
+    text-decoration: none;
+    background-color: var(--color-tan);
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: 3px solid var(--test-outline);
+    border-radius: 20px;
+}
+    #contact-discord-button:hover {
+        background-color: var(--color-gold);
+        color: var(--color-tan);
+    }

@@ -1,0 +1,59 @@
+﻿@model GainesOpusInstitute.Web.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div id="loginContainer">
+    <br>
+    <br>
+    <div id="cont">
+        <div id="welcomeContainer">
+            <form asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" role="form">
+                <h2>We are happy to see you again!</h2>
+
+                <div style="height: 40px" ></div>
+                <label asp-for="Email">Username</label>
+                <input asp-for="Email"/>
+                <span asp-validation-for="Email"></span>
+
+                <div style="height: 30px" ></div>
+                <label asp-for="Password">Password</label>
+                <input type="password" asp-for="Password"/>
+                <span asp-validation-for="Password"></span>
+                
+                @*
+                <label asp-for="user.email" class="control-label">Email</label>
+                <input asp-for="user.email" class="form-control" />
+                <span asp-validation-for="user.email" class="text-danger"></span>
+
+                <label asp-for="user.instrument" class="control-label">Instrument</label>
+                <input asp-for="user.instrument" class="form-control" />
+                <span asp-validation-for="user.instrument" class="text-danger"></span>
+                *@
+
+                <div style="height: 40px" ></div>
+
+                <div id="info1Btn">
+                    <button type="submit" id="button">Sign In</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="cont2">
+            <div id="info2">
+                <div id="text">
+                    <h3>Don't have an account? Please <a id="termsLink" asp-controller="Account" asp-action="Register">Sign up!</a></h3>
+                </div>
+                <div id="info2Btn">
+                    <a id="signupBtn" asp-controller="Account" asp-action="Register">Sign up</a> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

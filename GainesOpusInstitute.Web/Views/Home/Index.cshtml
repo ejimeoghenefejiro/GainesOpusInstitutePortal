@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div id="indexContent">
+
+@* Section1 *@
+<div id="section1">
+    <img src="/css/images/GainesOpusInstitute12.png" data-image-width="1080" data-image-height="1080" id="main-logo-img"/>
+
+    <div id="slogan-heading-container">
+        <p id="slogan-heading"><b>MUSIC a​t your own pace.</b><br/> Take control of<br><b><i>your music education!</i></b></p>
+    </div>
+
+    <div id="hooking-heading-container">
+        <h2 id="hooking-heading"><b> Free Class Today, Sign Up!</b></h2>
+    </div>
+
+    <div id="before-button-title-container"> 
+        <p id="before-button-title">Discover the advantages of learning music online with teachers tailored for you to successfully reach your goals.</p>
+    </div>
+
+    <div id="section1-buttons-container">
+        <a class="section1-button-discord" href="https://discord.gg/VaCYxyPZxr">Discord</a>
+        <a class="section1-button-getStarted" asp-page="/register">Get Started</a>
+    </div>
+</div>
+
+@* Section2 *@
+<div id="section2">
+
+    <div id="section2-content1">
+        <div id="section2-title1-container"><p id="section2-title1">How it works</p></div>
+        <div id="section2-title2-container"><p id="section2-title2"><b>Choose&nbsp;</b>the time and instructor of your&nbsp;<b><i>preference</i></b></p></div>
+        <div id="section2-title3-container"><p id="section2-title3">Go get credits so you can start as soon as you want!</p></div>
+    </div>
+
+    <div id="section2-content2">
+        <div id="section2-title4-container"><p id="section2-title4">Login and begin classes:</p></div>
+        <div id="section2-title5-container"><p id="section2-title5">Being new to an instrument can be intimidating. There are so many options out there that it can be difficult to know where to begin or how to choose. Every teacher we have tailors a curiculum to you specifically for you to reach your goal in the time span you desire. So go grab some credits and start learning them with us, Here are the instruments we offer:&nbsp;&nbsp;</p></div>
+        <div id="section2-title6-container">
+    
+        <ul id="section2-title6-list">
+             <li>Drums / Percussion</li>
+            <li>Electric / Classical Guitar</li>
+            <li>Piano / Keyboard</li>
+            <li>Vocals</li>
+            <li>Ukulele&nbsp;</li>
+            <li>Cello</li>
+        </ul>
+
+        </div>
+    </div>
+
+</div>
+
+@* Section3 *@
+<div id="section3">
+    <div id="section3-content1">
+        <p id="section3-title1">ABOUT PROGRAM</p>
+        <p id="section3-title2"><b>Qualified and experienced</b>&nbsp;<br>instructors who&nbsp;<br>live to help others&nbsp;<br><b><i>reach their goals&nbsp;</i> </b></p>
+        <p id="section3-title3">Hi! My name is Blue and I instruct piano from the united states. I have lived in other countries and am trilingual. I have been teaching for over 7 years and have enjoyed and can help you overcome the dificulties of learning an instrument.&nbsp;</p>
+    </div>
+    <div id="section3-content2">
+        <img data-image-width="612" data-image-height="408" id="section3-image" src="~/css/images/AsianTeacher.jpg"/>
+    </div>
+</div>
+
+@* Section4 *@
+<div id="section4">
+        <div id="section4-content1">
+          <img data-image-width="1000" data-image-height="1500" id="section4-image" src="~/css/images/imageedit_1_5430553326.jpg"/>
+        </div>
+        <div id="section4-content2">
+            <p id="section4-title1">TAILOR YOUR LEARNING TO FIT YOUR SCHEDULE</p>
+            <p id="section4-title2">Our <b>lessons</b>&nbsp;are for <b><i>those </i></b>who:</p>
+ 
+            <ol id="section4-title3">
+                <li>Ready to invest time and energy in education </li>
+                <li>Take this course if you want to upgrade your musical ability</li>
+                <li>For those who want to organize their knowledge </li>
+                <li>For those who have a busy or changing schedule</li>
+                <li>For those who want to meet their desired musical skill level in a time frame they chose.&nbsp;</li>
+            </ol>
+ 
+            <p id="section4-title4">By choosing an online music lesson, you can study from anywhere at any time you want. On top of that, online courses offer very competitive prices that don’t exist in the world of face-to-face classes, and in this case, anywhere</p>
+        </div>
+</div>
+
+@* Section5 *@
+<div id="section5">
+    <div id="section5-title1-container"><p id="section5-title1">Getting started</p></div>
+
+    <div id="section5-title2-container"><p id="section5-title2"><b>What </b>to&nbsp;<b><i>expect</i></b></p></div>
+
+    <div id="section5-title3-container"><p id="section5-title3">By enrolling in our school, you will use this software to schedule and pay for lessons. Credits are used to purchase lessons.&nbsp; Lessons will be hosted on Discord, which can be found at the top of this page or in the contacts tab.&nbsp;</p></div>
+
+    <div id="section5-title4-container">
+         <ul id="section5-title4">
+            <li>Once you have successfully purchased credits, you may view the calendar of available time slots on your home page when logged in.</li>
+            <li>On your student calendar, you may view all upcoming lessons and purchase new lessons with any teacher.</li>
+            <li>Once you have purchased a lesson, you will receive a notification with the teacher, time, and class location by email for your scheduled lesson.</li>
+            <li>Be in the correct class room at the correct time and if any issues arise, contact admin or staff on the discord. All forms of contact are through discord.&nbsp;</li>
+        </ul>
+    </div>
+
+    <div id="section5-title5-container"><p id="section5-title5"><i>This list of all the key points will help you form expectations and understnading of the appointment process.</i></p></div>
+    
+    <div id="section5-title6"><p><b>Contact </b>us:</p></div>
+
+    <div id="discord-button-container"><a href="https://discord.gg/VaCYxyPZxr" id="discord-button"><b>Discord</b></a></div>
+
+</div>
+
+@*
+     @if (User.Identity.IsAuthenticated)
+    {
+        @if(User.IsInRole("Student"))
+        {
+            <h3>You're a student</h3>
+        }
+        else
+        {
+            <h3>You're a teacher</h3>
+        }
+    }
+
+*@
+   
+</div>

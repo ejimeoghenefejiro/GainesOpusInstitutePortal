@@ -1,0 +1,89 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-green: #474D3D;
+    --color-red: #8C4A45;
+    --color-darkerRed: #723c38;
+    --color-gold: #a37f41;
+    --color-tan: #F7F5E1;
+    --color-purple: #3B2738;
+    --color-lightGrey: #f2f2f2;
+    --color-darkGrey: #e0e0e0;
+    --navbar-height: 64px;
+    --footer-height: 80px;
+    --test-outline: transparent;
+    /*#73AD21*/
+}
+
+body {
+    height: 100vh;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var( --color-lightGrey);
+    outline: 3px solid var(--test-outline);
+}
+
+#profilePageContainer {
+    position: relative;
+    left: 125px;
+    height: 500px;
+    width: calc(100% - 125px);
+    background-color: var(--color-tan);
+    outline: 3px solid var(--test-outline);
+}
+
+#manageTitle {
+    position: relative;
+    color: var(--color-green);
+    top: 50px;
+    text-align: center;
+    width: 100%;
+    font-size: 36px;
+    outline: 3px solid var(--test-outline);
+}
+#profileContainer {
+    position: relative;
+    top: 100px;
+}
+#profileTitle {
+    position: relative;
+    color: var(--color-green);
+    text-align: left;
+    left: 12.5%;
+    width: 75%;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}
+#usernameTitle {
+    position: relative;
+    color: var(--color-green);
+    text-align: left;
+    left: 12.5%;
+    width: 75%;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}
+#emailTitle {
+    position: relative;
+    color: var(--color-green);
+    text-align: left;
+    left: 12.5%;
+    width: 75%;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}
+#instrumentTitle {
+    position: relative;
+    color: var(--color-green);
+    text-align: left;
+    left: 12.5%;
+    width: 75%;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}

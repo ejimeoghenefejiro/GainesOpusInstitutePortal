@@ -1,0 +1,77 @@
+﻿@model GainesOpusInstitute.Web.Models.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div id="registerContainer">
+    <br>
+    <br>
+    <div id="cont1">
+        <div id="regForm">
+            <form method="post" role="form">
+
+                <h2>Create your Account</h2>
+
+                  <label asp-for="Username">
+                    <span asp-validation-for ="Username">Username*</span>
+                    <input asp-for="Username" type="text"/>
+                </label>
+
+                 <label asp-for="Password">
+                    <span asp-validation-for="Password">Password *</span>
+                    <input asp-for="Password" class="form-control" />
+                  
+                </label>
+                 <label asp-for="Surname">
+                    <span asp-validation-for="Surname">Surname *</span>
+                    <input asp-for="Surname" class="form-control" />
+                    
+                </label>
+                 <label asp-for="Othernames">
+                    <span asp-validation-for="Othernames">Othernames *</span>
+                    <input asp-for="Othernames" class="form-control" />
+                    
+                </label>
+                <label asp-for="Email">
+                    <span asp-validation-for="Email">Email *</span>
+                    <input asp-for="Email" class="form-control" />
+                    
+                </label>
+                
+                <label asp-for="Instrument">
+                    <span asp-validation-for="Instrument">Instrument *</span>
+                    <input asp-for="Instrument" type="text"/>
+                    
+                </label>
+
+                <div style="height: 20px" ></div>
+
+                <p id="terms">By creating an account you agree to our <a id="termsLink" asp-page="/TermsAndPolicy">Terms & Policy.</a></p>
+
+                <div style="height: 20px" ></div>
+
+                <div id="reg1Btn">
+                     <button type="submit" id="button">Sign Up</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="cont3">
+            <div id="info3">
+                <div id="text3">
+                    <h3>If you already have an account, <a id="termsLink" asp-page="/Login">sign in.</a> </h3>
+                    <div asp-validation-summary="All" id="errorMsg"></div>
+                </div>
+                
+                <div id="info3Btn">
+                     <a id="signinBtn" asp-page="/login">Sign In</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

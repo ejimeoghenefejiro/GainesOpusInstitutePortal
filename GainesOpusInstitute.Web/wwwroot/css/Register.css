@@ -1,0 +1,225 @@
+﻿
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    background: var(--color-tan);
+}
+
+#registerContainer {
+    width: 100%;
+    height: 900px;
+}
+
+#cont1 {
+    border-radius: 20px;
+    top: 250px;
+    overflow: hidden;
+    position: relative;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 550px;
+    background: var(--color-tan);
+}
+
+#regForm {
+    position: relative;
+    left: 300px;
+    width: 300px;
+    top: 45px;
+}
+
+#reg1Btn {
+    overflow: hidden;
+    position: center;
+    z-index: 0;
+    width: 150px;
+    height: 36px;
+    margin: 0 auto;
+    background-color: transparent;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+
+#cont3 {
+    overflow: hidden;
+    position: absolute;
+    left: 640px;
+    top: 0;
+    width: 900px;
+    height: 100%;
+    padding-left: 260px;
+    background: var(--color-green);
+}
+
+#info3 {
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    padding-top: 360px;
+}
+
+#text3 {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    color: var(--color-tan);
+}
+
+#info3Btn {
+    overflow: hidden;
+    position: center;
+    z-index: 0;
+    width: 150px;
+    height: 36px;
+    margin: 0 auto;
+    background-color: transparent;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#signinBtn {
+    background-color: var(--color-tan);
+    color: var(--color-green);
+    border: none;
+    padding: 5px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    z-index: 2;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+}
+
+    #signinBtn:hover {
+        background-color: var(--color-gold);
+        color: var(--color-tan)
+    }
+
+h2 {
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+    color: var(--color-green);
+}
+
+label {
+    display: block;
+    width: 260px;
+    margin: 25px auto 0;
+    text-align: center;
+    color: var(--color-green);
+}
+
+    label span {
+        font-size: 12px;
+        color: #bababa;
+        text-transform: uppercase;
+        color: var(--color-green);
+    }
+
+input {
+    font-family: 'Times New Roman', serif;
+    display: hidden;
+    width: 100%;
+    background: none;
+    background-color: transparent;
+    outline: none;
+    color: var(--color-green);
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+#terms {
+    color: var(--color-green);
+    text-align: center;
+}
+
+#termsLink {
+    color: var(--color-gold);
+}
+
+#errorMsg {
+    z-index: 2;
+    position: absolute;
+    left: 15%;
+    top: 200%;
+    width: 85%;
+    padding: 0 20px;
+    text-align: left;
+    color: var(--color-tan);
+}
+
+@media (max-width: 765px) {
+
+    #cont3 {
+        overflow: hidden;
+        position: absolute;
+        left: 300px;
+        top: 575px;
+        width: 300px;
+        height: 450px;
+        padding-left: 260px;
+        background: var(--color-green);
+        border-radius: 20px;
+    }
+
+    #info3 {
+        overflow: hidden;
+        z-index: 2;
+        position: absolute;
+        left: 25px;
+        top: 0;
+        width: 260px;
+        height: 100%;
+        padding-top: 360px;
+    }
+
+    #registerContainer {
+        width: 100%;
+        height: 1250px;
+    }
+
+    #cont1 {
+        border-radius: 20px;
+        top: 250px;
+        overflow: hidden;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 900px;
+        height: 1050px;
+        background: var(--color-tan);
+    }
+}

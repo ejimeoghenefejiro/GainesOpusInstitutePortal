@@ -1,0 +1,761 @@
+/* General Page Css*/
+:root {
+    --color-grey1: #EEEFEF;
+    --color-grey2: #D1D1D1;
+    --color-grey3: #B3B3B3;
+    --color-grey4: #999999;
+    --color-grey5: #666666;
+    --color-grey6: #4D4D4D;
+    --color-grey7: #333333;
+    --color-grey8: #000000;
+    --color-green: #474D3D;
+    --color-red: #8C4A45;
+    --color-darkerRed: #723c38;
+    --color-gold: #a37f41;
+    --color-brightGold: #DDAE5F;
+    --color-tan: #F7F5E1;
+    --color-purple: #3B2738;
+    --color-lightGrey: #f2f2f2;
+    --color-darkGrey: #e0e0e0;
+    --navbar-height: 64px;
+    --footer-height: 80px;
+}
+#page-content {
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    background-color: var(--color-tan);
+    outline: 3px solid var(--test-outline);
+}
+#payment-wrap {
+    position: relative;
+    text-align: center;
+    top: +64px;
+    height: 1000px;
+    outline: 3px solid var(--test-outline);
+    background-color: var(--color-tan);
+}
+
+
+/* Sections */
+/* Section1 */
+#payment-section1 {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    height: 50px;
+    background-color: var(--color-tan);
+    margin: 30px auto;
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 45px;
+    outline: 3px solid transparent;
+}
+
+/* Section2 */
+#payment-section2 {
+    position: relative;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+    outline: 3px solid var(--test-outline);
+}
+
+/* Section3 */
+#payment-section3 {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    top: -12px;
+    height: 50px;
+    outline: 3px solid var(--test-outline);
+    background-color: var(--color-tan);
+    margin: 15px auto;
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 28px;
+    outline: 3px solid var(--test-outline);
+}
+
+/* Section4 */
+#payment-section4 {
+    position: relative;
+    height: 50px;
+    top: -25px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    background-color: var(--color-tan);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    outline: 3px solid var(--test-outline);
+}
+
+/* Section5 */
+#payment-section5 {
+    position: relative;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+    outline: 3px solid var(--test-outline);
+}
+
+/* Card1 */
+#card1 {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    background-color: var(--color-grey1);
+    outline: 3px solid var(--test-outline);
+}
+#card1-heading {
+    position: relative;
+    height: 50px;
+    top: 15px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    outline: 3px solid var(--test-outline);
+}
+#card1-price {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+    outline: 3px solid var(--test-outline);
+}
+#card1-content {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}
+#card1-button-container {
+    position: relative;
+    top: 40px;
+    outline: 3px solid var(--test-outline);
+}
+#card1-button {
+    padding: 10px 43px;
+    border: transparent;
+    text-decoration: none;
+    background-color: var(--color-green);
+    border: transparent;
+    color: var(--color-tan);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: 3px solid var(--test-outline);
+    border-radius: 20px;
+}
+    #card1-button:hover {
+        background-color: var(--color-gold);
+        color: var(--color-tan);
+    }
+
+/* Card2 */
+#card2 {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    background-color: var(--color-grey2);
+    outline: 3px solid var(--test-outline);
+}
+#card2-heading {
+    position: relative;
+    height: 50px;
+    top: 15px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    outline: 3px solid var(--test-outline);
+}
+
+#card2-price {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+    outline: 3px solid var(--test-outline);
+}
+#card2-content {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}
+#card2-button-container {
+    position: relative;
+    top: 40px;
+    outline: 3px solid var(--test-outline);
+}
+#card2-button {
+    padding: 10px 43px;
+    border: transparent;
+    text-decoration: none;
+    background-color: var(--color-green);
+    color: var(--color-tan);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: 3px solid var(--test-outline);
+    border-radius: 20px;
+}
+    #card2-button:hover {
+        background-color: var(--color-gold);
+        color: var(--color-tan);
+    }
+
+/* Card3 */
+#card3 {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    background-color: var(--color-grey3);
+    outline: 3px solid var(--test-outline);
+}
+#card3-heading {
+    position: relative;
+    height: 50px;
+    top: 15px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    outline: 3px solid var(--test-outline);
+}
+#card3-price {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+    outline: 3px solid var(--test-outline);
+}
+#card3-content {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-red);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}
+#card3-button-container {
+    position: relative;
+    top: 40px;
+    outline: 3px solid var(--test-outline);
+}
+#card3-button {
+    padding: 10px 43px;
+    border: transparent;
+    text-decoration: none;
+    background-color: var(--color-green);
+    color: var(--color-tan);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: 3px solid var(--test-outline);
+    border-radius: 20px;
+}
+    #card3-button:hover {
+        background-color: var(--color-gold);
+        color: var(--color-tan);
+    }
+
+/* Card4 */
+#card4 {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    background-color: var(--color-grey4);
+    outline: 3px solid var(--test-outline);
+}
+#card4-heading {
+    position: relative;
+    height: 50px;
+    top: 15px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    outline: 3px solid var(--test-outline);
+}
+#card4-price {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+    outline: 3px solid var(--test-outline);
+}
+#card4-content {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-purple);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}
+#card4-button-container {
+    position: relative;
+    top: 40px;
+    outline: 3px solid var(--test-outline);
+}
+#card4-button {
+    padding: 10px 43px;
+    border: transparent;
+    text-decoration: none;
+    background-color: var(--color-gold);
+    color: var(--color-tan);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: 3px solid var(--test-outline);
+    border-radius: 20px;
+}
+    #card4-button:hover {
+        background-color: var(--color-brightGold);
+        color: var(--color-tan);
+    }
+
+/* Card5 */
+#card5 {
+    display: inline-block;
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    background-color: var(--color-grey5);
+    outline: 3px solid var(--test-outline);
+}
+#card5-heading {
+    position: relative;
+    height: 50px;
+    top: 15px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-grey1);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    outline: 3px solid var(--test-outline);
+}
+#card5-price {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-grey1);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+    outline: 3px solid var(--test-outline);
+}
+#card5-content {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-grey1);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}
+#card5-button-container {
+    position: relative;
+    top: 40px;
+    outline: 3px solid var(--test-outline);
+}
+#card5-button {
+    padding: 10px 43px;
+    border: transparent;
+    text-decoration: none;
+    background-color: var(--color-tan);
+    color: var(--color-green);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: 3px solid var(--test-outline);
+    border-radius: 20px;
+}
+    #card5-button:hover {
+        background-color: var(--color-gold);
+        color: var(--color-tan);
+    }
+
+/* Card6 */
+#card6 {
+    display: inline-block;
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    background-color: var(--color-grey6);
+    outline: 3px solid var(--test-outline);
+}
+#card6-heading {
+    position: relative;
+    height: 50px;
+    top: 15px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-grey1);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    outline: 3px solid var(--test-outline);
+}
+#card6-price {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-grey1);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+    outline: 3px solid var(--test-outline);
+}
+#card6-content {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-grey1);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}
+#card6-button-container {
+    position: relative;
+    top: 40px;
+    outline: 3px solid var(--test-outline);
+}
+#card6-button {
+    padding: 10px 43px;
+    border: transparent;
+    text-decoration: none;
+    background-color: var(--color-tan);
+    color: var(--color-green);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: 3px solid var(--test-outline);
+    border-radius: 20px;
+}
+    #card6-button:hover {
+        background-color: var(--color-gold);
+        color: var(--color-tan);
+    }
+
+/* Card7 */
+#card7 {
+    display: inline-block;
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    background-color: var(--color-grey7);
+    outline: 3px solid var(--test-outline);
+}
+#card7-heading {
+    position: relative;
+    height: 50px;
+    top: 15px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-grey1);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    outline: 3px solid var(--test-outline);
+}
+#card7-price {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-grey1);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+    outline: 3px solid var(--test-outline);
+}
+#card7-content {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-grey1);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}
+#card7-button-container {
+    position: relative;
+    top: 40px;
+    outline: 3px solid var(--test-outline);
+}
+#card7-button {
+    padding: 10px 43px;
+    border: transparent;
+    text-decoration: none;
+    background-color: var(--color-tan);
+    color: var(--color-green);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: 3px solid var(--test-outline);
+    border-radius: 20px;
+}
+    #card7-button:hover {
+        background-color: var(--color-gold);
+        color: var(--color-tan);
+    }
+
+/* Card8 */
+#card8 {
+    display: inline-block;
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    background-color: var(--color-grey8);
+    outline: 3px solid var(--test-outline);
+}
+#card8-heading {
+    position: relative;
+    height: 50px;
+    top: 15px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-brightGold);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    outline: 3px solid var(--test-outline);
+}
+#card8-price {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 40%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-brightGold);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+    outline: 3px solid var(--test-outline);
+}
+#card8-content {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    width: 60%;
+    outline: 3px solid var(--test-outline);
+    color: var(--color-brightGold);
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    outline: 3px solid var(--test-outline);
+}
+#card8-button-container {
+    position: relative;
+    top: 40px;
+    outline: 3px solid var(--test-outline);
+}
+#card8-button {
+    padding: 10px 43px;
+    border: transparent;
+    text-decoration: none;
+    background-color: var(--color-gold);
+    color: var(--color-tan);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: 3px solid var(--test-outline);
+    border-radius: 20px;
+}
+    #card8-button:hover {
+        background-color: var(--color-brightGold);
+        color: var(--color-tan);
+    }
+
+/* Dynamic Stuff*/
+
+@media screen and (max-width: 920px) {
+    #payment-wrap {
+        position: relative;
+        text-align: center;
+        top: +64px;
+        height: 1400px;
+        outline: 3px solid var(--test-outline);
+        background-color: var(--color-tan);
+    }
+    #payment-section2 {
+        position: relative;
+        height: 500px;
+        text-align: center;
+        margin: auto;
+        outline: 3px solid var(--test-outline);
+    }
+    #payment-section5 {
+        position: relative;
+        height: 500px;
+        text-align: center;
+        margin: auto;
+        outline: 3px solid var(--test-outline);
+    }
+}
+@media screen and (max-width: 920px) {
+    #payment-section3 {
+        display: inline-block;
+        width: 75%;
+        position: relative;
+        top: 20px;
+        height: 50px;
+        outline: 3px solid var(--test-outline);
+        background-color: var(--color-tan);
+        margin: 15px auto;
+        color: var(--color-purple);
+        text-align: center;
+        font-family: 'Times New Roman', serif;
+        font-size: 28px;
+        outline: 3px solid var(--test-outline);
+    }
+    #payment-section4 {
+        position: relative;
+        height: 50px;
+        top: 0px;
+        margin: auto;
+        width: 75%;
+        outline: 3px solid var(--test-outline);
+        background-color: var(--color-tan);
+        color: var(--color-purple);
+        text-align: center;
+        font-family: 'Times New Roman', serif;
+        font-size: 16px;
+        outline: 3px solid var(--test-outline);
+    }
+}
+@media screen and (max-width: 460px) {
+    #payment-wrap {
+        position: relative;
+        text-align: center;
+        top: +64px;
+        height: 2600px;
+        outline: 3px solid var(--test-outline);
+        background-color: var(--color-tan);
+    }
+    #payment-section2 {
+        position: relative;
+        height: 1100px;
+        text-align: center;
+        margin: auto;
+        outline: 3px solid var(--test-outline);
+    }
+    #payment-section5 {
+        position: relative;
+        height: 1100px;
+        text-align: center;
+        margin: auto;
+        outline: 3px solid var(--test-outline);
+    }
+}

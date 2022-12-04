@@ -1,0 +1,89 @@
+﻿@using Microsoft.AspNetCore.Components
+<!DOCTYPE html>
+
+<html style="font-size: 16px;">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="keywords" content="MUSIC at your own pace. Take control of&nbsp;your music education!, Free Class Today, Sign Up!, &nbsp;Choose&nbsp;the time and instructor of your&nbsp;preference, Qualified and experienced&nbsp;instructors who&nbsp;live to help others&nbsp;reach their goals, Our lessons&nbsp;are for those who:, What to&nbsp;expect, Student reviews">
+<meta name="description" content="">
+<meta name="page_type" content="np-template-header-footer-from-plugin">
+<title>@ViewData["Title"] - GainesOpusInstitute1._2</title>
+<link rel="stylesheet" type="text/css" href="~/css/style.css" asp-append-version="true"/>
+<link rel="stylesheet" type="text/css" href="~/css/Home.css" asp-append-version="true" >
+<link rel="stylesheet" type="text/css" href="~/css/Contact.css" asp-append-version="true">
+<link rel="stylesheet" type="text/css" href="~/css/Login.css" asp-append-version="true">
+<link rel="stylesheet" type="text/css" href="~/css/Register.css" asp-append-version="true">
+<link rel="stylesheet" type="text/css" href="~/css/Pricing.css" asp-append-version="true" media="screen">
+<link rel="stylesheet" type="text/css" href="~/css/TermsAndPolicy.css" asp-append-version="true" media="screen">
+</head>
+
+<body>
+<!-- Page Container -->
+<div id="page-container">
+<!-- Navbar-->
+<div class="header-container">
+<header id="navbar">
+    <nav class="navbar-container container">
+        <a href="/" class="home-link">
+            <div class="navbar-logo">
+                <img src="~/css/images/GainesOpusInstitute4.png">
+            </div>
+            Gaines Opus Institute
+        </a>
+        <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" aria-labelledby="navbar-toggle">
+            <ul class="navbar-links">
+                 @if(!User.Identity.IsAuthenticated)
+                 {
+                <li class="navbar-item"><a class="navbar-link" asp-controller="Account" asp-action="Login">Login</a></li>     
+                <li class="navbar-item"><a class="navbar-link" asp-page="/Index">Home</a></li>
+                <li class="navbar-item"><a class="navbar-link" asp-page="/PricingUnregistered">Pricing</a></li>
+                <li class="navbar-item"><a class="navbar-link" asp-page="/contact">Contact</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="https://discord.gg/VaCYxyPZxr">Discord</a></li>
+                 }
+
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <form method="post" class="navbar-item">
+                                    <button type="submit" class="navbar-link" asp-page="Account/logout">Logout</button>
+                                </form>
+                                <li class="navbar-item"><a class="navbar-link" asp-page="/PagesLoggedIn/index2">Return</a></li>
+                            }
+
+            </ul>
+        </div>
+    </nav>
+</header>
+</div>
+
+<!-- Page Content -->
+<div id="pageContent-wrap">
+    @RenderBody() <!--<main role="main">RenderBody()</main>-->
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>copyright &copy;2022 <a href="#">Gaines Opus Institute</a> All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+<script src="https://js.stripe.com/v3/"></script>
+@await RenderSectionAsync("Scripts", required: false)
+
+</div>
+
+</body>
+
+</html>
+
+
